@@ -38,7 +38,7 @@ BOOL CBCCatalogIsPrimaryDemoFromClass(Class aClass) {
     invocation.selector = @selector(catalogIsPrimaryDemo);
     invocation.target = aClass;
     [invocation invoke];
-    [invocation getReturnValue:&isPrimaryDemo];
+    [invocation getReturnValue:isPrimaryDemo];
   }
 
   return isPrimaryDemo;
